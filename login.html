@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="este es el inicio de sesión">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav class="nav-bar">
+        <img src="img/g1730.png" alt="" onclick="abrirIndexHTML()">
+        <a href="login.html">Iniciar Sesión</a>
+        <a href="register.html">Registrate</a>
+    </nav>
+    <span id="bglog"></span>
+    <section class="login">
+        <div class="logincont">
+            <h1>INICIAR SESIÓN</h1>
+            <form class="formlog">
+                <div class="rowform">
+                <img src="img/bx-user-circle.svg" alt="">
+                <input type="email" placeholder="Tu dirección de correo">
+                </div>
+                <div class="rowform">
+                    <img src="img/bx-lock-alt.svg" alt="">
+                    <input class="ojoin" type="password" placeholder="Tu contraseña">
+                    <img id="eye" src="img/bxs-low-vision.svg" alt="">
+                </div>
+                <button id="ingresar">Iniciar Sesión</button>
+                <p id="linsep">o</p>
+                <div class="ingoog">
+                <img src="img/bxl-google.svg" alt=""><button id="ingoogle">Iniciar Sesión Google</button>
+                </div>
+            </form>
+        </div>
+    </section>
+    <script src="js/main.js"></script>
+</body>
+</html>
