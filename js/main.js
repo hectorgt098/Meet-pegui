@@ -50,12 +50,10 @@ function abrircn(){
 let checkact = document.querySelectorAll('#checkact');
 let checkaft = document.querySelectorAll('#checkaft');
 
-console.log(checkact, checkaft);
+
 
 Array.from(checkact).forEach((div, index) => {
   let checkbox = div.querySelector('#checkaft');
-
-  console.log(checkaft);
   div.addEventListener('click', camb);
 
   function camb() {

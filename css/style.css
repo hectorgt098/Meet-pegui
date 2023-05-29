@@ -323,6 +323,11 @@ body{
 
 #record{
     border: 2px solid #F2595A;
+    transition: all .5s ease;
+}
+
+#record:hover{
+    color: #ffffff;
 }
 
 .btnopsala::after{
@@ -476,8 +481,9 @@ input:focus-visible{
   }
   
   .day {
-    border: 1px solid #9c7bea;
+    border: 1px solid #ffcc00;
     padding: 10px;
+    backdrop-filter: blur(10px);
   }
   
 #cal{
