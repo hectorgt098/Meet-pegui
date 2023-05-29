@@ -18,19 +18,19 @@
     <section class="login">
         <div class="logincont">
             <h1>Crea tu cuenta</h1>
-            <form class="formlog">
+            <form class="formlog" onsubmit="validarFormulario(Event)">
                 <div class="rowform">
-                    <input type="email" placeholder="Nombre y apellido">
+                    <input type="text" placeholder="Nombre y apellido" required>
                     </div>
                 <div class="rowform">
-                <input type="email" placeholder="Tu dirección de correo">
+                <input type="email" placeholder="Tu dirección de correo" required>
                 </div>
-                <div class="rowform">
-                    <input class="ojoin" type="password" placeholder="Tu contraseña">
+                <div class="rowform" >
+                    <input class="ojoin" type="password" placeholder="Tu contraseña" required>
                     <img id="eye" src="img/bxs-low-vision.svg" alt="">
                 </div>
                 <div class="rowform">
-                    <input class="ojoin" type="password" placeholder="Repite tu contraseña">
+                    <input class="ojoin" type="password" placeholder="Repite tu contraseña" required>
                     <img id="eye" src="img/bxs-low-vision.svg" alt="">
                 </div>
                 <button id="ingresar">Regístrate</button>

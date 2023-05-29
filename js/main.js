@@ -23,3 +23,12 @@ Array.from(ojos).forEach((ojo, index) => {
 function abrirIndexHTML() {
     window.open("index.html", "_blank");
 }
+
+function validarFormulario(event) {
+    var campo = document.getElementById('campo');
+
+    if (campo.value.trim() === '') {
+      alert('Por favor, completa el campo');
+      event.preventDefault(); // Evita que el formulario se envíe
+    }
+  }
