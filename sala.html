@@ -16,17 +16,75 @@
     <section class="contentsala">
         <div class="opcionesala">
             <h1>Sala Principal</h1>
-            <button class="btnopsala">
+            <button class="btnopsala" onclick="abrircn()">
                 <img src="img/bxs-slideshow.svg" alt=""> Crear nueva sala
             </button>
-            <button class="btnopsala">
+            <button class="btnopsala" onclick="abririp()">
                 <img src="img/bxs-user-account.svg" alt=""> Invitar participantes </button>
-            <button class="btnopsala">
+            <button class="btnopsala" onclick="abrircal()">
                 <img src="img/bxs-calendar-plus.svg" alt=""> Agregar al calendario</button>
             <button class="btnopsala" id="record">
                 <img src="img/bxs-camera-movie.svg" alt=""> Iniciar reunión</button>
         </div>
+        <div class="saladiv" id="ill">
+            <img src="img/ilussala.webp" alt="">
+        </div>
+
+        <div class="saladiv" id="cn">
+            <h1>Crear nueva sala</h1>
+            <div class="panelcrear">
+            <input type="text" placeholder="Escribe un nombre para la sala">
+            <input type="text" placeholder="Genera un nuevo código de acceso">
+            <div class="habcrear">
+            <label>Deshabilitar micrófono de usuarios al entrar</label><div id="checkact">
+                <span id="checkaft"></span>
+            </div>
+            </div>
+            <div class="habcrear">
+                <label>Requerir aprobación del moderador antes de unirse</label><div id="checkact">
+                    <span id="checkaft"></span>
+                </div>
+                </div>
+                <div class="habcrear">
+                    <label>Permitir inicio de usuarios en esta sesión</label><div id="checkact">
+                        <span id="checkaft"></span>
+                    </div>
+                    </div>
+                    <div class="habcrear">
+                        <label>Todos los usuarios se unen como moderadores</label><div id="checkact">
+                            <span id="checkaft"></span>
+                        </div>
+                        </div>
+                        <div class="habcrear">
+                            <label>Envíarme a la sala automaticamente cuando empice la sesión</label><div id="checkact" >
+                                <span id="checkaft"></span>
+                            </div>
+                            </div>
+            <div style="display:  flex; flex-direction: row; gap: 10px;">
+            <button>Crear sala</button>
+            <button>Cancelar</button>
+            </div>
+            </div>
+        </div>
+        <div class="saladiv" id="ip">
+            <h1>Invitar participantes</h1>
+            <div class="panelcrear">
+                <h3>Información para unirse</h3>
+                <p>Copia y envía este enlace a las personas con las que te quieras reunir.
+                    Guárdalo también para poder usarlo en otro momento.</p>
+                <a href="https://meeting.pegui.edu.co/dan-k2c-jdx-dah">https://meeting.pegui.edu.co/dan-k2c-jdx-dah</a>
+            </div>
+        </div>
+        <div class="saladiv" id="cal">
+            <h1>Calendario</h1>
+                <div id="calendar">          
+            </div>
+    <script src="main.js"></script>
+        </div>
     </section>
     <img id="layerfoot" src="img/g840.webp" alt="">
+
+    <script src="js/main.js"></script>
+    <script src="js/calendar.js"></script>
 </body>
 </html>
